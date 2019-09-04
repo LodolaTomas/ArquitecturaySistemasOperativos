@@ -1,0 +1,48 @@
+**apt-get install build-essential -> paquete que me crea un compilador y otros programas que me permite poder instalar el 
+paquete extra de VB.
+
+**para que realmente bootee tengo que habilitar el PAE/NX
+
+**PUNTO DE MONTAJE
+kernel ->linux
+gnu -> aplicaciones
+
+**sistema base -> sus aplicaciones me permiten entrar a un directorio.
+no importa que distribucion de linux maneje, porque la estructura de directorio se mantiene. tambien los comandos.
+si yo no tengo interfaz grafica y solo la interfaz de texto (login grafico): no se automontan los dispositivos externos, si no a mano.
+
+estructura de directorios: cada carpeta implica que voy a tener archivos ejecutables, directorios con las versiones del kernel, etc.
+cada directorio contiene informacion, y puedo designar quien tiene poder para ejecutar y usar las aplicaciones (un admin o un usuario)
+
+standard FHS: A QUE DIRECTORIOS TIENE ACCESO EL USUARIO.
+
+archivos estaticos: binarios, bibliotecas, etc. se actualizan cuando se actualiza el paquete.
+
+
+consola:
+
+nombredeusuario@nombredeequipo
+
+- $(el usuario es un normal)
+
+- #(el usuario es admin)
+
+ls
+ls -l ->que tipo de archivo es/que permisos tengo/cantidad de enlaces/dueño del archivo/en que grupo esta el archivo/ cant de bytes/fecha yaño de creacion/nombre del archivo
+
+permisos:
+
+rw-x -> 
+(permisos "r") me permiten leer el archivo
+(permisos "w") me permiten modificar el archivo
+(permisos "x") me permiten distribuir el archivo binario
+p.e: rw- -> eso es solo para leer y ejecutar.
+
+"rwx r-- --- x"
+rwx -> dueño
+r-- -> grupo
+--- -> otros
+
+si en la primera linea hay:
+"-" -> archivo
+"d" -> directorio
