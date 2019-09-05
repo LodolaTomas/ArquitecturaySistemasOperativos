@@ -46,3 +46,125 @@ r-- -> grupo
 si en la primera linea hay:
 "-" -> archivo
 "d" -> directorio
+
+archivos ocultos que no vemos o no queremos mostrar
+los archivos escultos comienzan con un "."
+
+ls -a  (puedo ver los archivos ocultos)
+
+.config  contiene toda las informacion con respecto a la informacion grafica
+ 
+ls -la (dandole dos parametros) ( vemos que es un directorio es para dueño )( lectura y ejecucion para los grupos) ( lectura y ejecucion para otros)
+
+cd .config (ingreso al direcctorio)
+
+y dentro  de .config pongo
+
+ls -a y veo todo lo que contiene todo la parte del escritorio
+
+ls -l autostart 
+
+BROWSERX LINUX
+
+cd .. (me muevo para atras)
+
+.  accedo 
+.. atras 
+
+pwm (para saber donde estoy parado) desde la raiz hasta donde estamos
+
+/ raiz
+ 
+/ barra al principio pad absoluto
+  sino relativo
+
+para acceder al home del usuario pongo "cd"
+
+ home guarda todo el contenido de los usuarios
+      varios usuarios tamb 
+
+	un usuario no puede entrar a otros, a noser que sea root (admin)
+
+
+~ (altGr 4) 
+
+shell un interprete de comando 
+muchos interpretes de comando cada sirve para un particular
+el pordefecto es "bash"
+permite teclas rapidas (CRTL l) borro pantalla(propio de bash)
+
+guarda un historial de comando y para acceder "flecha para arriba o abajo"
+genera un archivo para guardar los comandos que utilizo
+
+l (TAB) veo todos los comandos que empiezan con l
+tanto como para comando como para archivos fuciona
+(solo bash)
+
+cat (puedo ver contenido)(con el tabulador contenido y arhcivos)
+
+cat /etc/shells (todos los interpretes de comandos instaladas podremos ver)
+
+
+shells script  retringidos
+
+(CTRL r)para buscar sobre la misma busqueda del historial de comandos
+(CTRL c)lo cancelo
+
+
+puedo ver la informacion que fui haciendo comando
+"history" propio de bash 
+veo los comandos con numeros de lineas
+y para acceder a un comando 
+!"numero de linea" y accedo al comando hecho
+Ej. !2020
+
+dentro del directorio home se guarda 
+cat .bash_history
+
+ir al directorio anterior cd ~ || cd .. || cd -(vuelvo al directorio home) ||
+ cd /home/tomas/ 
+
+
+
+cd /usr/local/../doc
+absoluto porque comienza con raiz
+sino es relativo
+../ || usr/local
+
+usr/local/../doc
+voy al usr voy a local vulevo para atras osea que vuelvo al usr y ingreso a doc
+
+
+ls -l Escritorio (entro el el escritorio pero mas detallado)
+ls -ld (lo veo desde afuera)
+
+ls -lh
+("h"  lo tramsfoma en giga tera pasar de kb a giga a tera una forma mas facil de ver)
+
+
+cd /proc (veo lo que se ejecuta)
+
+cat /proc/meminfo (inmformacion de como esta la memoria)
+cat /proc/cpuinfo (informacion del cpu)
+			las banderas (flags)
+			vmz permite el intel virtualizar
+
+cat /proc/version (que version del nucleo tengo y otras versiones)
+SMP multiprocesamientos
+
+numeros indica procesos 
+
+cat cmdline
+
+ more/proc/cpuinfo detiene entre linear de apares y con la letra "q"salgo
+
+less /proc/cpuinfo busca informacin y pinta  y es igualito
+
+
+
+
+
+
+
+
+
